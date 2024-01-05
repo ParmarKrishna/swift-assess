@@ -6,9 +6,9 @@ In this, I am showcasing the application demo and introducing you to some additi
 <hr/>
 
 ### Tech Stack
-Swift 5.9.2
-XCode 15
-
+- [x] Swift 5.9.2
+- [x] XCode 15
+- [x] Use of Delegate and Protocols (custom)
 ## Functionalities for UI
 
 ### Layout Support for Landscape as well as Portrait View
@@ -38,6 +38,7 @@ https://github.com/ParmarKrishna/swift-assess/assets/62243565/5ff7b588-82e5-490b
 
 ### Alert
 <img width="300" alt="Alert" src="https://github.com/ParmarKrishna/swift-assess/assets/62243565/52c84f73-7557-4c97-9604-1395ce49a698">
+
 ## Navigation Stack
 <table>
   <tr>
