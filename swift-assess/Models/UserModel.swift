@@ -1,10 +1,4 @@
-//
-//  RequestUserModel.swift
-//  swift-assess
-//
-//  Created by Admin on 05/01/24.
-//
-
+//UserModel that comply with JSON field and their names
 import Foundation
 
 struct UserModel:Codable{

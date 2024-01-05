@@ -1,10 +1,4 @@
-//
-//  NMErrors.swift
-//  swift-assess
-//
-//  Created by Admin on 05/01/24.
-//
-
+// Module for Custom Error for Error Handling
 import Foundation
 
 enum NMErrors:Error{

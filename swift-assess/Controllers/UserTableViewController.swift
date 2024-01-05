@@ -1,3 +1,4 @@
+//User Table View Controller
 import UIKit
 
 class UserTableViewController: UITableViewController, NMMadeUpdate {
@@ -22,8 +23,11 @@ class UserTableViewController: UITableViewController, NMMadeUpdate {
     override func viewDidLoad() {
         super.viewDidLoad()
         networkPoint.delegate = self
-        navigationItem.hidesBackButton = true;
+        navigationItem.hidesBackButton = true; //comment this to use navigation, as it has single screen to show result, it has been hidden.
+        // NetworkModule Class networkpoint sets user
         let url = networkPoint.setUser(with: username)
+        
+        // NetworkModule Class networkpoint gets user using "Task" as our function is asyn and viewDidLoad is not async function, hence require explicit implementation.
         Task {
             do {
                 let user = try await networkPoint.getUser(with: url)

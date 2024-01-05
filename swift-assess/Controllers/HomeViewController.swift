@@ -1,21 +1,19 @@
-//
-//  HomeViewController.swift
-//  swift-assess
-//
-//  Created by Admin on 04/01/24.
-//
-
+// Home View Controller Swift file
 import UIKit
 
 class HomeViewController: UIViewController {
     
+    // bottomConstraint helps push view up for Keyboard
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
+    //searchField gives user's input
     @IBOutlet weak var searchField: UITextField!
+    
+    //storing user's input
     var username:String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Adding observers
+        //Adding observers for Keyboard activity
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(self.keyboardWillShow),
@@ -29,7 +27,7 @@ class HomeViewController: UIViewController {
             object: nil)
     }
     
-    // MARK: - Keyboard Functionality
+    // MARK: - Keyboard Functionality that moves view up
     
     @objc func keyboardWillShow(_ notification: NSNotification) {
         if searchField.isEditing {
@@ -77,7 +75,7 @@ class HomeViewController: UIViewController {
         }
     }
     // MARK: - Navigation
-    
+    // NOTE: This function helps send the data across the destination view controller.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //         Get the new view controller using segue.destination.
         if segue.identifier == "toUserHome"{
