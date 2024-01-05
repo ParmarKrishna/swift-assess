@@ -12,8 +12,8 @@ This project is a GitHub User Profile Viewer that utilizes the GitHub REST API. 
     - [x] Username
     - [x] Name
     - [x] Description
-    - [x] Follower count (e.g., X followers)
-    - [x] Following count (e.g., X following)
+    - [ ] Follower count (e.g., X followers)
+    - [ ] Following count (e.g., X following)
 
 - [ ] **Followers/Following View:**
   - [ ] Displays a list of the user's followers.
